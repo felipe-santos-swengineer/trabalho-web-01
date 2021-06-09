@@ -4,7 +4,7 @@
 }
 
 #paper{
-    
+
     background-color: white;
     margin-left: 70px;
     margin-right: 70px;
@@ -49,4 +49,40 @@
 #listaItens{
    margin-left: 25%;
 }
-
+#form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:8px;
+}
+#sub-btn{
+  border:0px;
+  width:120px;
+  height:30px;
+  border-radius:4px;
+  margin-top:10px;
+  background-color: blue;
+}
+#sub-btn:hover{
+  box-shadow: 5px 5px 5px rgba(0,0,255,0.7);
+  transform: scale(1.2);
+  color:white;
+}
+#contact-links{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:8px;
+}
+.ct-link{
+  text-decoration: none;
+  color: rgba(0,0,255,0.5);
+}
+.ct-link:hover{
+  color: blue;
+}
+#ct-title{
+  color:rgba(0,0,0,0.67);
+}
