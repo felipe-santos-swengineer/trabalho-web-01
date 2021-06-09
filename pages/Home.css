@@ -86,3 +86,12 @@
 #ct-title{
   color:rgba(0,0,255,1);
 }
+
+#team{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
