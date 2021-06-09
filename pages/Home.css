@@ -86,3 +86,8 @@
 #ct-title{
   color:rgba(0,0,255,1);
 }
+#credits-btn{
+  border:0px;
+  color:blue;
+  background-color:rgb(226, 223, 223);
+}

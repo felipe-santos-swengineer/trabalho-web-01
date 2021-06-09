@@ -9,9 +9,9 @@
     <link href="./Home.css" rel="stylesheet">
     <title>Task-01</title>
   </head>
-  
+
   <body>
-    
+
     <div id="background">
       <div id="paper">
         <!--Navbar-->
@@ -66,18 +66,19 @@
         <br>
 
         <div id="mensagens"></div>
-        
-        
+
+
         <table id="tabelaMsg" style="margin-left: 20%;margin-right: 20%; text-align:justify;">
         </table>
 
 
         <div id="footer">
-          <a href="./Sobre.html">Creditos</a>
+          <script src="./script.js"></script>
+          <button id="credits-btn" onclick="pop_up()">Creditos</button>
         </div>
 
       </div>
-    
+
     </div>
 
     <!--Scripts-->
@@ -89,16 +90,16 @@
         if(nome == "" || msg == ""){
           return null;
         }
-        
+
         var divContainer = document.querySelector("#mensagens");
         var newForm = document.createElement("form");
         var newMsg = document.createTextNode(nome + ": " + msg);
 
         document.getElementById("nome").value = "";
         document.getElementById("msg").value = "";
-        
-        var btn = document.createElement("input");  
-        btn.setAttribute('type', 'button');  
+
+        var btn = document.createElement("input");
+        btn.setAttribute('type', 'button');
         btn.setAttribute('value', 'Deletar');
         btn.style.backgroundColor="red";
         btn.style.marginLeft="10px";
@@ -125,7 +126,7 @@
         if(nome == "" || msg == ""){
           return null;
         }
-        
+
         var divContainer = document.querySelector("#tabelaMsg");
 
         var container = document.createElement("tr");
@@ -135,13 +136,13 @@
           "<td><button onclick='deleteRow(this.parentNode.parentNode.rowIndex)' style='background-color:'red';margin-left:10px;'>Deletar</button>"
         ].join("\n");
 
-        
+
         document.getElementById("nome").value = "";
         document.getElementById("msg").value = "";
-        
 
-        var btn = document.createElement("input");  
-        btn.setAttribute('type', 'button');  
+
+        var btn = document.createElement("input");
+        btn.setAttribute('type', 'button');
         btn.setAttribute('value', 'Deletar');
         btn.style.backgroundColor="red";
         btn.style.marginLeft="10px";
