@@ -1,0 +1,51 @@
+#background{
+    background-color: rgb(204, 182, 182);
+    background-size: cover;
+}
+
+#paper{
+    
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#a_navbar{
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: -webkit-linear-gradient(left, Black 50%, blue 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#mensagens{
+    margin-left: 20%;
+    margin-right: 20%;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+#footer{
+    background-color: rgb(226, 223, 223);
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#listaItens{
+   margin-left: 25%;
+}
