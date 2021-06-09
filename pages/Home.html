@@ -60,7 +60,7 @@
         </table>
 
         <div id="area">
-            <button type="button" onclick="postarMsg()">Enviar</button>
+            <button type="button" onclick="postarMsgTabela()">Enviar</button>
             <br>
         </div>
         <br>
@@ -68,7 +68,7 @@
         <div id="mensagens"></div>
         
         
-        <table id="tabelaMsg" align="center" style="margin-left: 20%;margin-right: 20%; text-align:justify;">
+        <table id="tabelaMsg" style="margin-left: 20%;margin-right: 20%; text-align:justify;">
         </table>
 
 
@@ -114,6 +114,10 @@
         divContainer.appendChild(newForm);
     }
 
+    function deleteRow(i){
+    document.getElementById('myTable').deleteRow(i)
+    }
+
     function postarMsgTabela(){
         var nome = document.getElementById("nome").value;
         var msg = document.getElementById("msg").value;
@@ -126,7 +130,7 @@
 
         var container = document.createElement("tr");
         container.innerHTML = [
-          "<td style='padding-right: 10px;'>" + nome +":" + "</td>",
+          "<td style='margin-right: 10px;'>" + nome +":" + "</td>",
           "<td>" + msg + "</td>",
           "<td><button onclick='deleteRow(this.parentNode.parentNode.rowIndex)' style='background-color:'red';margin-left:10px;'>Deletar</button>"
         ].join("\n");
@@ -135,15 +139,12 @@
         document.getElementById("nome").value = "";
         document.getElementById("msg").value = "";
         
+
         var btn = document.createElement("input");  
         btn.setAttribute('type', 'button');  
         btn.setAttribute('value', 'Deletar');
         btn.style.backgroundColor="red";
         btn.style.marginLeft="10px";
-
-        btn.onclick = () => {
-          container.innerHTML = "";
-        }
 
         divContainer.appendChild(container);
     }
